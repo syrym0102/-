@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Продажа LED экранов</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .hero-section {
+            background-image: url('led-screen-banner.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+        .contact-form {
+            padding: 20px;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">LED Экраны</a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#">Главная</a></li>
+                <li class="nav-item"><a class="nav-link" href="#catalog">Каталог</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Примеры проектов</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Контакты</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section text-center">
+        <div>
+            <h1>Продажа LED экранов</h1>
+            <p>Качественные LED экраны для любых нужд</p>
+            <a href="#contact" class="btn btn-primary">Получить консультацию</a>
+        </div>
+    </section>
+
+    <!-- Каталог товаров -->
+    <section id="catalog" class="container mt-5">
+        <h2 class="text-center">Каталог LED экранов</h2>
+        <div class="row">
+            <!-- Пример товара -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="led-screen1.jpg" class="card-img-top" alt="LED Экран 1">
+                    <div class="card-body">
+                        <h5 class="card-title">LED Экран 1</h5>
+                        <p class="card-text">Разрешение: 1920x1080, Размер: 3x2 м</p>
+                        <p class="card-text"><strong>Цена: 100 000 тг</strong></p>
+                    </div>
+                </div>
+            </div>
+            <!-- Другие товары по аналогии -->
+        </div>
+    </section>
+
+    <!-- Примеры проектов -->
+    <section id="projects" class="container mt-5">
+        <h2 class="text-center">Реализованные проекты</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <img src="project1.jpg" class="card-img-top" alt="Проект 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Проект 1</h5>
+                        <p class="card-text">LED экран на фасаде здания торгового центра.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Другие проекты -->
+        </div>
+    </section>
+
+    <!-- Обратная связь -->
+    <section id="contact" class="container mt-5">
+        <h2 class="text-center">Свяжитесь с нами</h2>
+        <div class="contact-form">
+            <form action="/contact" method="POST">
+                <div class="form-group">
+                    <label for="name">Ваше имя</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Сообщение</label>
+                    <textarea class="form-control" id="message" name="message" rows="3" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Отправить</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="text-center mt-5">
+        <p>&copy; 2024 LED Экраны. Все права защищены.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
